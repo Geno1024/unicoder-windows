@@ -28,12 +28,56 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.text = new System.Windows.Forms.TextBox();
+            this.unicode = new System.Windows.Forms.TextBox();
+            this.nameList = new System.Windows.Forms.ListBox();
+            this.SuspendLayout();
+            // 
+            // text
+            // 
+            this.text.Location = new System.Drawing.Point(12, 12);
+            this.text.Name = "text";
+            this.text.Size = new System.Drawing.Size(754, 28);
+            this.text.TabIndex = 0;
+            this.text.TextChanged += new System.EventHandler(this.Text_TextChanged);
+            // 
+            // unicode
+            // 
+            this.unicode.Location = new System.Drawing.Point(12, 46);
+            this.unicode.Name = "unicode";
+            this.unicode.Size = new System.Drawing.Size(754, 28);
+            this.unicode.TabIndex = 1;
+            this.unicode.TextChanged += new System.EventHandler(this.Unicode_TextChanged);
+            // 
+            // nameList
+            // 
+            this.nameList.FormattingEnabled = true;
+            this.nameList.ItemHeight = 18;
+            this.nameList.Location = new System.Drawing.Point(12, 80);
+            this.nameList.Name = "nameList";
+            this.nameList.Size = new System.Drawing.Size(754, 454);
+            this.nameList.TabIndex = 2;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(778, 544);
+            this.Controls.Add(this.nameList);
+            this.Controls.Add(this.unicode);
+            this.Controls.Add(this.text);
+            this.Name = "Form1";
+            this.Text = "Unicoder";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.TextBox text;
+        private System.Windows.Forms.TextBox unicode;
+        private System.Windows.Forms.ListBox nameList;
     }
 }
 

@@ -117,13 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="downloadCancel" xml:space="preserve">
-    <value>Download cancelled.</value>
-  </data>
-  <data name="downloadOK" xml:space="preserve">
-    <value>Download finished.</value>
-  </data>
-  <data name="updateUCD" xml:space="preserve">
-    <value>Updating Unicode Database</value>
-  </data>
 </root>
